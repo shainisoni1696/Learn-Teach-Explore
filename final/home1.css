@@ -1,0 +1,362 @@
+/* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 150px;
+    text-align: center;
+    background-image: url("r.jpg");
+     background-size: 1500px 450px;
+    background-repeat: no-repeat;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+ margin-top: -.3em;
+  margin-bottom: 0em;
+    color: #003380;
+    font-size: 50px;
+    }
+.header h3{
+  padding-top: 20px;
+  margin:0;
+   color: lightgrey;
+   font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color:#003380;
+}
+
+/* Style the navigation bar links */
+.navbar1 a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 30px 50px 30px 50px;
+    text-decoration: none;
+}
+/* Right-aligned link */
+.navbar1 a.right {
+    float: left;
+}
+form.s_bar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    margin-left: 350px;
+    width: 40%;
+    background: #f1f1f1;
+}
+
+form.s_bar button {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background: #003380;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.s_bar button:hover {
+    background: #003380;
+}
+
+form.s_bar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* Change color on hover */
+
+.navbar a:hover {
+    background-color: #003380;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+.main h2{
+ 
+}
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.dropdown {
+    float: right;
+    overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 30px 20px 60px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #3385ff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003380;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 50px 40px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #003380;
+}
+
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #003380;
+}
+li ul { display: none; }
+
+ul li a {
+  display: block;
+ /* padding: 1em;*/
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+
+ul li a:hover { background: #003380; }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+
+li:hover li { float: none; }
+
+li:hover a { background: #003380; }
+
+li:hover li a:hover { background: #003380; }
+
+.navbar1 li ul li { border-top: 0; }
+ul ul ul {
+  left: : 100%;
+  top: 0;
+}
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+ul:after { clear: both; }
+ .neha{
+          color:white;
+           padding-right: 15px;
+           padding-left:  15px;
+          padding-bottom: 10px;
+           }
+
+.neha p{
+  text-align: center;
+}
+.main p{
+  margin-left: 350px;
+}
+
+
+.alex{
+  background-color: #003380;
+  font-style: 
+
+}
+.alex a,p,h3,h2{
+  color: white;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float:right;
+    width: 33.33%;
+    padding: 10px;
+    height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
+
+
+
+.image {
+    border-radius: 60px;
+    border: 0;
+    display: inline-block;
+    position: relative;}
+    .image.round img {
+      border-radius: 100%;
+    }
+
+
+
+  #footer .inner {
+    border-top: 1px solid #dbdbdb;
+    padding-top: 3em;
+  }
+
+
+  #footer .copyright {
+    color: #bbb;
+    font-size: 0.8em;
+    margin: 0 0 2em 0;
+    padding: 0;
+  }
+
+    #footer .copyright a {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+      #footer .copyright a:hover {
+        color: #bbb;
+        text-decoration: underline;
+      }
+
+  #footer ul.icons li .icon {
+    font-size: 0.58em;
+  }
+
+  @media screen and (max-width: 736px) {
+
+    #footer .inner {
+      padding-top: 2em;
+    }
+
+    #footer .copyright {
+      -ms-flex-order: 2;
+      -moz-order: 2;
+      -webkit-order: 2;
+      -ms-order: 2;
+      order: 2;
+    }
+
+    #footer ul {
+      -ms-flex-order: 1;
+      -moz-order: 1;
+      -webkit-order: 1;
+      -ms-order: 1;
+      order: 1;
+    }
+
+    #footer .flex {
+      -moz-flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+    }
+
